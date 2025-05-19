@@ -6,7 +6,8 @@
         {
             //ManagerEncodeAndDecodeStrings();
             //ManageProductExceptSelf();
-            ManageValidSudoku();
+            //ManageValidSudoku();
+            ManageLongestConsecutiveSequence();
         }
 
         public static void ManagerEncodeAndDecodeStrings()
@@ -86,6 +87,18 @@
             var _two = validSudokuSolution.IsValidSudoku(inputTwo);
             Console.WriteLine(_two.ToString());
 
+        }
+
+        public static void ManageLongestConsecutiveSequence()
+        {
+            int[] inputOne = [2,20,4,10,3,5];
+            int[] inputTwo = [0,3,2,5,4,6,1,1];
+
+            LongestConsecutiveSequenceSolution longestConsecutiveSequenceSolution = new LongestConsecutiveSequenceSolution();
+            var _resultOne = longestConsecutiveSequenceSolution.LongestConsecutiveSequence(inputOne);
+            Console.WriteLine(_resultOne.ToString());
+            var _resultTwo = longestConsecutiveSequenceSolution.LongestConsecutiveSequence(inputTwo);
+            Console.WriteLine(_resultTwo.ToString());
         }
 
     }
