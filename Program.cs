@@ -7,7 +7,8 @@
             //ManagerEncodeAndDecodeStrings();
             //ManageProductExceptSelf();
             //ManageValidSudoku();
-            ManageLongestConsecutiveSequence();
+            //ManageLongestConsecutiveSequence();
+            ManageIsPalindrome();
         }
 
         public static void ManagerEncodeAndDecodeStrings()
@@ -100,6 +101,19 @@
             var _resultTwo = longestConsecutiveSequenceSolution.LongestConsecutiveSequence(inputTwo);
             Console.WriteLine(_resultTwo.ToString());
         }
+
+        public static void ManageIsPalindrome()
+        {
+            string inputOne = "Was it a car or a cat I saw?";
+            string inputTwo = "tab a cat";
+
+            IsPalindromeSolution isPalindromeSolution = new IsPalindromeSolution();
+            var result = isPalindromeSolution.IsPalindrome(inputOne);
+            Console.WriteLine(result);
+            result = isPalindromeSolution.IsPalindrome(inputTwo);
+            Console.WriteLine(result);
+        }
+
 
     }
 }
