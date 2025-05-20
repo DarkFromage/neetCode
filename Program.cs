@@ -8,7 +8,8 @@
             //ManageProductExceptSelf();
             //ManageValidSudoku();
             //ManageLongestConsecutiveSequence();
-            ManageIsPalindrome();
+            //ManageIsPalindrome();
+            ManageTwoSum();
         }
 
         public static void ManagerEncodeAndDecodeStrings()
@@ -112,6 +113,16 @@
             Console.WriteLine(result);
             result = isPalindromeSolution.IsPalindrome(inputTwo);
             Console.WriteLine(result);
+        }
+
+        public static void ManageTwoSum()
+        {
+            int[] input = { 1, 2, 3, 4 };
+            int target = 6;
+
+            TwoSumSolution twoSumSolution = new TwoSumSolution();
+            var result = twoSumSolution.TwoSum(input, target);
+            foreach(int i in result) Console.Write(i + " ");
         }
 
 
