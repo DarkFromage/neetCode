@@ -9,7 +9,8 @@
             //ManageValidSudoku();
             //ManageLongestConsecutiveSequence();
             //ManageIsPalindrome();
-            ManageTwoSum();
+            //ManageTwoSum();
+            ManageThreeSum();
         }
 
         public static void ManagerEncodeAndDecodeStrings()
@@ -123,6 +124,22 @@
             TwoSumSolution twoSumSolution = new TwoSumSolution();
             var result = twoSumSolution.TwoSum(input, target);
             foreach(int i in result) Console.Write(i + " ");
+        }
+
+        public static void ManageThreeSum()
+        {
+            int[] inputOne = [-1, 0, 1, 2, -1, -4];
+            int[] inputTwo = [0, 1, 1];
+            int[] inputThree = [0, 0, 0];
+
+            ThreeSumSolution threeSumSolution = new ThreeSumSolution();
+            var _result = threeSumSolution.ThreeSum(inputOne);
+            foreach (List<int> list in _result)
+            {
+                foreach (int i in list) Console.Write(i + " ");
+                Console.WriteLine();
+            }
+            
         }
 
 
